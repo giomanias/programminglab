@@ -1,3 +1,6 @@
+
+#scrivere una funzioni che sommi i valori dell file.shampoo , li trasformi in float e faccia la somma dei valori
+
 def somma_valori_file(my_file):
   values=[]
   for line in my_file:
