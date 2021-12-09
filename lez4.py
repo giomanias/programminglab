@@ -32,7 +32,7 @@ class CSVFile():
 
 
 #dichiaro shampoo e la associo alla classe  
-shampoo=CSVFile("sales.csv")
+shampoo=CSVFile("shampoo_sales.csv")
 #dichiaro my_data e la associo al metodo get_data della classe CSVFile
 my_data=shampoo.get_data()
 
