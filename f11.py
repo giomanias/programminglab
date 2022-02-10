@@ -5,10 +5,10 @@
 
 #dichiaro le mie liste
 
-lista=[1,2,3,4,5]
-lista2=[1,2,3,4,5]
-lista_vuota=[0,0,0,0,0]
-lista_interi=[1]
+lista = [1,2,3,4,5]
+lista2 = [1,2,3,4,5]
+lista_vuota = []
+lista_interi = [1]
 
 #funzione che stampa la lista
 
@@ -29,20 +29,31 @@ def statistiche(my_lista):
 #funzione che fa la somma vettoriale di 2 liste
 
 def somma_vettoriale(my_lista,my_lista2):
-  i=-1
+
+  i = 0
+
+  somma = 0
+
   try:
+
     if (len(my_lista) == len(my_lista2)):
-      if (type(my_lista) == type(my_lista2)):
-        if (type(my_lista) == type(lista_interi)):
-          for i in range(len(my_lista)):
-            i=i+1
-            somma=(sum(my_lista[i])+sum(my_lista2[i]))
-            lista_vuota[i]=somma + lista_vuota[i]
-            print(lista_vuota[i])
+
+      if(type(my_lista) == type(lista_interi)):
+
+        if (type(my_lista) == type(my_lista2)):
+        
+          while (i < len(my_lista)):
+
+            somma = my_lista[i] + my_lista2[i]
+
+            lista_vuota.append(somma)
+
+            i += 1
 
     return lista_vuota
 
   except:
+
     return lista_vuota
 
 #provo a richiamare le funzioni e vedo se le liste sono di interi 

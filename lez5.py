@@ -29,7 +29,7 @@ class CSV():
 
     except Exception as e:
 
-    #se non riesc o ad aprire il file ne uso come default
+    #se non riesco ad aprire il file ne uso come default
 
       print('impossibile aprire il file , uso un file come default:')
       my_file = open ('shampoo_sales.csv','r')
